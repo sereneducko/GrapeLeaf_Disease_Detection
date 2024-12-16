@@ -268,6 +268,7 @@ To make the model accessible to end-users, a image docker is created and pushed 
 This project has achieved what it set out to do which is to develop a AI model that is capable of classifying an user inputted image into a few disease classes. The evaluation metrics shows that the model is performing well. The model has also been deployed and can be accessed by users. Although the model is accurate at classifying the availble classes, the number of classes is still very limited. Future improvement in this project would involve capturing or procuring photos of different key of disease that affects grape plants.
 
 This project also shows how deep learning can be applied in real-life scenario that may help solve people's problem.
+
 ---
 
 ## 🤝 Credits
