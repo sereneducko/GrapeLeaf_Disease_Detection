@@ -72,7 +72,10 @@ Split data akhir untuk empat kelas adalah sebagai berikut:
 ### 2. Algorithm
 
 - Framework <br />
-Kami menggunakan TensorFlow dan Keras.
+Kami menggunakan TensorFlow dan Keras sebagai lib pembangun model kami. Untuk proyek ini kami memutuskan untuk menggunakan ResNet50
+Alasannya adalah cocok dengan ukuran dataset yang kita miliki (medium to large dataset), serta memiliki track record performa yang bagus.
+
+Karena dataset berada di Kaggle, maka training juga dilakukan di cloud environment Kaggle untuk mempermudah proses training.
 
 - Pembangunan Model <br />
 Masukkan kode training dan juga spesifikasi model, seperti epoch, learning rate, batch size, dan lain sebagainya.
