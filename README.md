@@ -42,11 +42,32 @@ Solusi : Membuat model klasifikasi deep learning yang mampu mengklasifikasi empa
 - Data Collection <br />
 Data yang diperlukan untuk projek ini adalah data gambar daun tanaman anggur, yang dapat ditemukan di Kaggle.
 Beberapa dataset yang digunakan adalah sebagai berikut:
+https://www.kaggle.com/datasets/rm1000/grape-disease-dataset-original
+https://www.kaggle.com/datasets/pushpalama/grape-disease
 
-- Data Cleaning <br />
-Kami menggunakan pandas untuk membersihkan data. Berikut tabel contoh data yang belum dibersihkan dan yang sudah: 
+![plotall(1)](https://github.com/user-attachments/assets/c58d42f0-b6e8-40f5-a39c-2aa24b8152e8)
 
-Poin soal dataset boleh ditambahkan sesuai kebutuhan.
+- Data Augmentation <br />
+Data yang telah dikoleksi dilakukan augmentasi agar membuat model menjadi lebih robust dan banyak training datanya. 
+Augmentasi yang dilakukan meliputi:
+1. Horizontal dan Vertical Flipping
+2. Zooming
+3. Rotation
+4. Shearing
+5. Brightness Change
+
+![black_rot_original_vs_augmented](https://github.com/user-attachments/assets/16b84fdd-d2f2-4cc9-8632-6c2e13ed9343)
+![esca_original_vs_augmented](https://github.com/user-attachments/assets/5d83371c-29a2-41ce-9c4c-eb21a40d1932)
+![healthy_original_vs_augmented](https://github.com/user-attachments/assets/99afa1af-2fa2-478a-ad2d-7096b867ba34)
+![leaf_blight_original_vs_augmented](https://github.com/user-attachments/assets/608eeec6-9bc7-492a-8c6b-921b49442fe0)
+
+Setelah dilakukan semua augmentasi dan koleksi data dikumpul pada dataset Kaggle berikut:
+https://www.kaggle.com/datasets/stefanyeo/grape-vine-leaf-disease
+
+Split data akhir untuk empat kelas adalah sebagai berikut:
+12.000 training
+1.805 validasi
+1.805 training 
 
 ### 2. Algorithm
 
